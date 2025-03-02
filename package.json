@@ -1,7 +1,7 @@
 {
+  "homepage": "https://YehYuHung.github.com/tai-fex",
   "name": "tai-fex",
-  "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",

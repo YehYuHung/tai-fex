@@ -3,6 +3,7 @@ import react from "@vitejs/plugin-react";
 import viteBasicSslPlugin from "@vitejs/plugin-basic-ssl";
 
 export default defineConfig({
+  base: "/tai-fex/",
   plugins: [react(), viteBasicSslPlugin()],
   server: {
     proxy: {
