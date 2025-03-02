@@ -4,13 +4,13 @@ import { useState } from "react";
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
   customColor?: string;
-  primary: boolean;
-  secondary: boolean;
-  success: boolean;
-  warning: boolean;
-  danger: boolean;
-  outline: boolean;
-  rounded: boolean;
+  primary?: boolean;
+  secondary?: boolean;
+  success?: boolean;
+  warning?: boolean;
+  danger?: boolean;
+  outline?: boolean;
+  rounded?: boolean;
 }
 
 export default function Button({

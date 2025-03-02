@@ -18,7 +18,7 @@ function DetailsPage() {
   const [fetchData, { data, error, isLoading }] = useLazyFetchTaiFexQuery();
 
   const handleClick = async () => {
-    await fetchData();
+    await fetchData(undefined);
   };
 
   const headerBtn = (
