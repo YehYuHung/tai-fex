@@ -7,13 +7,11 @@ export default defineConfig({
   plugins: [react(), viteBasicSslPlugin()],
   server: {
     proxy: {
-      "/api/taifex/OpenInterestOfLargeTradersFutures": {
-        target:
-          "https://openapi.taifex.com.tw/v1/OpenInterestOfLargeTradersFutures",
+      "/api/taifex/": {
+        target: "https://openapi.taifex.com.tw/v1/",
         changeOrigin: true,
         secure: false,
-        rewrite: (path) =>
-          path.replace(/^\/api\/taifex\/OpenInterestOfLargeTradersFutures/, ""),
+        rewrite: (path) => path.replace(/^\/api\/taifex/, ""),
       },
     },
   },

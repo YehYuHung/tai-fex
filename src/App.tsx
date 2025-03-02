@@ -31,7 +31,7 @@ const router = createBrowserRouter(
     },
   ],
   {
-    basename: "/tai-fex", // Set basename here
+    basename: "/tai-fex/", // Set basename here
   }
 );
 
